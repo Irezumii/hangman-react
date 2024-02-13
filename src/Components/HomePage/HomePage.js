@@ -1,3 +1,4 @@
+import './HomePage.css'
 export default function HomePage({ setPasswords, container1, setChoosenCategory }) {
 
     const listOFAll = [

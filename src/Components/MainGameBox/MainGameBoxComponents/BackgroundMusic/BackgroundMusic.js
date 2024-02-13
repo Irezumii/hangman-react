@@ -1,4 +1,5 @@
 import { useState, useRef } from "react"
+import './BackgroundMusic.css'
 import backgroundMp3 from '../../../../assets/background.mp3'
 import soundOnImg from '../../../../assets/sound-on.png'
 import soundOffImg from '../../../../assets/sound-off.png'

@@ -1,0 +1,130 @@
+#animation-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  display: none;
+  transition: background-color 1.7s ease-in;
+}
+.you-lost-blank {
+  transition: all 0.7s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.you-lost {
+  transition: all 0.6s linear;
+  font-size: 30px;
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 13px 13px 24px 0px rgb(39, 39, 43);
+}
+#yes-or-no {
+  width: 30vw;
+  height: 35vh;
+  opacity: 0;
+  display: none;
+  top: 30px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 5px;
+  transition: all 1.2s ease;
+}
+#yn-info {
+  padding: 20px 10px;
+  -webkit-backdrop-filter: blur(6px);
+  grid-column: 2 /10;
+  backdrop-filter: blur(6px);
+  grid-column: 2 /10;
+  border: 4px solid white;
+  grid-row: 3 / 7;
+  display: flex;
+  color: transparent;
+  justify-content: center;
+  align-items: center;
+  text-shadow: none;
+  font-size: 25px;
+  border-radius: 30px;
+  box-shadow: 14px 14px 13px -12px rgba(0, 0, 0, 1);
+  transition: all 1.2s ease;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+#y-button {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: white;
+  border: 4px solid green;
+  grid-column: 2 / 6;
+  grid-row: 7 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 20px;
+  box-shadow: 14px 14px 13px -12px rgba(0, 0, 0, 1);
+}
+#n-button {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: white;
+  border: 4px solid red;
+  grid-column: 6 / 10;
+  grid-row: 7 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 20px;
+  box-shadow: 14px 14px 13px -12px rgba(0, 0, 0, 1);
+}
+.y-n-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 20px;
+  box-shadow: 14px 14px 13px -12px rgba(0, 0, 0, 1);
+  transition: background-color 0.3s linear;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.y-n-button a {
+  padding: 4vh 10vw;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+.y-n-button:hover {
+  box-shadow: inset 2px 2px 32px -20px rgba(0, 0, 0, 1) !important;
+  cursor: pointer;
+}
+.y-n-button:active {
+  box-shadow: inset 2px 2px 32px -20px rgba(0, 0, 0, 1) !important;
+  font-size: 40px !important;
+}
+@media screen and (max-width: 767px) {
+  .you-lost {
+    width: 250px;
+    height: 100px;
+  }
+  #yn-info {
+    font-size: 5vw !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .y-n-button {
+    font-size: 9vw !important;
+  }
+}

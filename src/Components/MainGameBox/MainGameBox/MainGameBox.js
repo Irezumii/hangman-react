@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react"
+import './MainGameBox.css'
 import Keyboard from '../MainGameBoxComponents/Keyboard/Keyboard.js'
 import EndGameScreen from '../MainGameBoxComponents/EndGameScreen/EndGameScreen.js'
 import BackgroundMusic from '../MainGameBoxComponents/BackgroundMusic/BackgroundMusic.js'
@@ -34,7 +35,6 @@ export default function MainGameBox({ passwords, setPasswords, container1,choose
                     <span>Kategoria: {choosenCategory}</span>
                     <span>Wins {winratio.you} / Loses {winratio.computer}</span>
                     </div>
-                {/* <div className="winratio"></div> */}
                 <BackgroundMusic />
                 <div id="container">
                     <HangmanImage

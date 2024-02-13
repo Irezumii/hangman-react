@@ -1,0 +1,31 @@
+.choosen-category {
+  position: absolute;
+  top: 10px;
+  left: 5vw;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+}
+#container {
+  background: url(../../../assets/background1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .choosen-category {
+    font-size: 14px;
+  }
+}

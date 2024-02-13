@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './Hangmanimage.css'
 import hg0img from '../../../../assets/w0.png'
 import hg1img from '../../../../assets/w1.png'
 import hg2img from '../../../../assets/w2.png'

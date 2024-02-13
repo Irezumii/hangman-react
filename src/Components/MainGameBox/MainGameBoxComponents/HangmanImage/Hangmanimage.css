@@ -1,0 +1,14 @@
+#image {
+  margin-top: 5vh;
+  position: relative;
+  width: 50vw;
+  height: 48vh;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image-image {
+  max-height: 40vh;
+  width: auto;
+}

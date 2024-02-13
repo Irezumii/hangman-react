@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import './EndGameScreen.css'
 
 export default function EndGameScreen({ container1, setPasswords, blankPassword, chances, setWinratio, winratio }) {
     const winLoseElements = useRef({})

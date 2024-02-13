@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import './ChanceDisplay.css'
 
 export default function ChanceDisplay({chances}) {
     const displayChances = useRef(null)

@@ -1,0 +1,23 @@
+#button-play {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 2.5vw;
+    top: 2.5vh;
+    z-index: 200;
+    border-radius: 50px;
+  }
+  #button-play img {
+    height: 100%;
+    width: auto;
+  }
+  #button-play:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    #button-play{
+        width: 40px;
+        height: 40px;
+    }
+}

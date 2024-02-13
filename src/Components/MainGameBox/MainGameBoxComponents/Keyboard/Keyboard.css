@@ -1,0 +1,127 @@
+#keyboard1 {
+  margin-top: 20px;
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  width: 80vw;
+  height: 10vh;
+  min-height: 60px;
+}
+#keyboard1 .button {
+  width: 10%;
+}
+#keyboard1 .button-green {
+  width: 10%;
+}
+#keyboard1 .button-red {
+  width: 10%;
+}
+#keyboard2 {
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  width: 80vw;
+  height: 10vh;
+  margin-top: 3px;
+  min-height: 60px;
+}
+#keyboard2 .button {
+  width: 11%;
+}
+#keyboard2 .button-green {
+  width: 11%;
+}
+#keyboard2 .button-red {
+  width: 11%;
+}
+#keyboard3 {
+  display: flex;
+  justify-content: center;
+  max-width: 950px;
+  width: 80vw;
+  height: 10vh;
+  margin-top: 3px;
+  min-height: 60px;
+}
+#keyboard3 .button {
+  width: 12.5%;
+}
+#keyboard3 .button-green {
+  width: 12.5%;
+}
+#keyboard3 .button-red {
+  width: 12.5%;
+}
+.button {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  height: 100%;
+  min-height: 60px;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.button:hover {
+  animation: vibrate 0.8s linear infinite;
+  font-size: 70px;
+}
+.button:active {
+  font-size: 85px;
+}
+.button-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  height: 100%;
+  border-radius: 10px;
+  color: rgb(68, 206, 80);
+  border: 3px solid green;
+  border-radius: 50px;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  min-height: 60px;
+}
+.button-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  height: 100%;
+  color: rgb(248, 68, 44);
+  transition: font-size 0.2s linear, opacity 1.2s ease;
+  -webkit-user-select: none;
+  user-select: none;
+  left: 10px;
+  opacity: 0.6;
+  min-height: 60px;
+}
+@media screen and (max-width: 767px) {
+  #keyboard1 {
+    width: 100vw;
+  }
+  #keyboard2 {
+    width: 100vw;
+  }
+  #keyboard3 {
+    width: 100vw;
+  }
+  .button {
+    font-size: 7vw;
+  }
+  .button-red {
+    font-size: 7vw;
+  }
+  .button-green {
+    font-size: 7vw;
+  }
+}

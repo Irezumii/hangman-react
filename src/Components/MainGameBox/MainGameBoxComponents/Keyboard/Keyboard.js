@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './Keyboard.css'
 
 const firstKeyboardRowArray = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"]
 const secoundKeyboardRowArray = ["a", "s", "d", "f", "g", "h", "j", "k", "l"]
@@ -13,9 +14,6 @@ export default function Keyboard({ choosenPassword, blankPassword, setBlankPassw
                 event.target.className = "button-green"
                 for (let i = 0; i < choosenPassword.current.length; i++) {
                     if (event.target.textContent === choosenPassword.current[i]) {
-                        // let temp = blankPassword
-                        // temp[i] = event.target.textContent
-                        // setBlankPassword(temp)
                         setBlankPassword(prevState => {
                             let temp = [...prevState];
                             temp[i] = event.target.textContent;

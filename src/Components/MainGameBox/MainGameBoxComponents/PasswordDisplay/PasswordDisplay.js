@@ -1,3 +1,4 @@
+import './PasswordDisplay.css'
 export default function PasswordDisplay({ blankPassword }) {
     return (
         <>
