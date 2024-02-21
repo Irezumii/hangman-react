@@ -19,7 +19,7 @@ export default function ChanceDisplay({chances}) {
     return (
         <>
             <div id="header" ref={displayChances}>
-                {chances < 2 ? "Pozostała ostatnia Próba" : `Pozostałych Prób : ${chances}`}
+                {chances < 2 ? "Ostatnia szansa !" : `Liczba szans : ${chances}`}
             </div>
         </>
     )
