@@ -7,8 +7,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blueviolet;
 }
 #image-image {
   max-height: 40vh;
   width: auto;
+}
+
+@media screen and (max-height: 700px) {
+  #image-image{
+    max-width: 25vh;
+  }
+  #image {
+    height: 30vh;
+    min-height: 0px;
+    margin-top: 7vh;
+  }
 }
